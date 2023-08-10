@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<input type="text" name="" id="b">
+<button onclick="chiahet()">Nhấn</button>
+<p> kết quả : <span id="toan"></span></p>
+<script>
+    function chiahet() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+
+        if (a % b == 0) {
+
+            document.getElementById("toan").innerHTML = a + " chia hết cho " + b
+        } else {
+            document.getElementById("toan").innerHTML = a +" không chia hết cho " +b
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

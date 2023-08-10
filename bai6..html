@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<button onclick="hoahong()">Nhấn</button>
+<p id="abc"></p>
+
+<script>
+    function hoahong() {
+        let tien = document.getElementById("a").value
+
+
+
+
+        if (tien > 1 && tien < 10){
+            let b = tien * 20000
+            document.getElementById("abc").innerHTML = b
+
+        } else if (tien > 10 && tien < 40){
+            let c = tien * 30000
+
+            document.getElementById("abc").innerHTML= c
+
+        } else if (tien>41&&tien<70){
+            let d = tien * 40000
+            document.getElementById("abc").innerHTML=d
+
+        }else {
+            let e = tien * 50000
+
+            document.getElementById("abc").innerHTML=e
+        }
+
+
+
+
+    }
+
+
+</script>
+</body>
+</html>

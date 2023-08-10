@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<input type="text" name="" id="b">
+<button onclick="bacnhat()">Nhấn</button>
+
+<script>
+    function bacnhat() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let kq=0
+        if (a === 0) {
+            if (b === 0) {
+                kq = "vô số nghiệm"
+                alert(kq)
+            }else {
+                kq="vô nghiệm"
+                alert(kq)
+            }
+        }else {
+            kq = -b/a
+            alert(kq)
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

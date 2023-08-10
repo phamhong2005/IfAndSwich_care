@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<input type="text" name="" id="b">
+<input type="text" name="" id="c">
+<button onclick="bachai()">Nhấn</button>
+<p id="kq"></p>
+<script>
+    function bachai() {
+        let a = document.getElementById("a").value
+        let b = document.getElementById("b").value
+        let c = document.getElementById("c").value
+        let denta = b * b - 4 * a * c > 0
+        let kq
+        if (denta > 0) {
+
+            let nghiem1 = (-b + Math.sqrt(denta)) / (2 * a)
+            let nghiem2 = (-b - Math.sqrt(denta)) / (2 * a)
+            kq = "nghiệm 1 là:" + nghiem1 + "nghiệm 2 là:" + nghiem2
+            document.getElementById("kq").innerHTML = kq
+        } else if (denta < 0) {
+            kq = " vô nghiệm"
+            // alert(kq)
+            document.getElementById("kq").innerHTML = kq
+        } else {
+            let nghiemkep = -b / (2 * a)
+            kq = "nghiệm kép là :" + nghiemkep
+            // alert(kq)
+            document.getElementById("kq").innerHTML = kq
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

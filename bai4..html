@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<input type="text" name="" id="b">
+<input type="text" name="" id="c">
+<button onclick="sosanh()">Nhấn</button>
+<p id="kq"></p>
+
+<script>
+    function sosanh() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let c = +document.getElementById("c").value
+
+        if (a > b && a > c) {
+            document.getElementById("kq").innerHTML = "giá trị lớn nhat là :" + a
+
+
+        }else if (a<b && b<c){
+            document.getElementById("kq").innerHTML = " giá trị lớn nhất là :" + c
+
+        }else if ( a>b && c >a){
+            document.getElementById("kq").innerHTML = " giá trị lớn nhất là :" + c
+
+        }else {
+            document.getElementById("kq").innerHTML
+        }
+
+
+    }
+</script>
+
+
+</body>
+</html>

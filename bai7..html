@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="a">
+<button onclick="cuocdienthoai()">Nhấn</button>
+
+
+<script>
+    function cuocdienthoai() {
+        let a = document.getElementById("a").value
+
+        if (a>1&&a<=5) {
+            let b = a *780
+            alert(b)
+        }else if (a>5&&a<=8){
+            let c = a*1000
+            alert(c)
+
+        }else if (a>8&&a<=10) {
+            let d = a * 1500
+            alert(d)
+
+
+        }else if (a>10&& a < 15){
+            let e = a * 1700
+            alert(a)
+        }else {
+            let f = a * 2000
+            alert(f)
+        }
+
+
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
